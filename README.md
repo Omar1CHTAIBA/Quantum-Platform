@@ -82,7 +82,8 @@ $$
 Using the projection operators $P_0 = |0\rangle\langle0|$ and $P_1 = |1\rangle\langle1|$, Quantum Lab splits the global unitary into two disjoint subspaces: the "un-triggered" identity subspace and the "triggered" operation subspace:
 $$CU = \left( I^{\otimes n} - P_1^{(controls)} \right) + \left( P_1^{(controls)} \otimes U^{(targets)} \right)$$
 
-### 4. Probability Histograms & Wire Terminals
+### 4. Probability Histograms
+
 **Feature:** View the global computational basis probabilities in the bar chart, and the marginal probability of measuring $|1\rangle$ at the end of each specific wire.
 **The Math:** According to the Born rule, the quantum state is a superposition of basis states $|x\rangle$ with complex amplitudes $\alpha_x$:
 $$|\psi\rangle = \sum_{x \in \{0,1\}^n} \alpha_x |x\rangle$$
