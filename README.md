@@ -22,15 +22,58 @@ $$|\psi_0\rangle = |0\rangle^{\otimes n} = |0\dots0\rangle$$
 In code, an 8-qubit system dynamically generates a complex state vector of $2^8 = 256$ dimensions.
 
 ### 2. Drag-and-Drop Single Qubit Gates
-**Feature:** Drag Pauli, Hadamard, and Phase gates onto the circuit wires to manipulate individual qubits.
-**The Math:** Closed quantum systems evolve via unitary transformations ($U^\dagger U = I$). Single-qubit gates are represented as $2 \times 2$ unitary matrices operating on $\mathbb{C}^2$:
 
-* **Pauli Gates (Fundamental Rotations):**
-    $$X = \begin{pmatrix} 0 & 1 \\\\ 1 & 0 \end{pmatrix}, \quad Y = \begin{pmatrix} 0 & -i \\\\ i & 0 \end{pmatrix}, \quad Z = \begin{pmatrix} 1 & 0 \\\\ 0 & -1 \end{pmatrix}$$
-* **Hadamard Gate (Superposition Generator):**
-    $$H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\\\ 1 & -1 \end{pmatrix}$$
-* **Phase Gates (Z-axis Rotations):**
-    $$S = \begin{pmatrix} 1 & 0 \\\\ 0 & i \end{pmatrix}, \quad T = \begin{pmatrix} 1 & 0 \\\\ 0 & e^{i\pi/4} \end{pmatrix}$$
+**Features:** Drag Pauli, Hadamard, and Phase gates onto the circuit wires to manipulate individual qubits.
+
+**Pauli Gates (Fundamental Rotations):**
+
+$$
+X =
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix},
+\quad
+Y =
+\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix},
+\quad
+Z =
+\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}
+$$
+
+**Hadamard Gate (Superposition Generator):**
+
+$$
+H =
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix}
+$$
+
+**Phase Gates (Z-axis Rotations):**
+
+$$
+S =
+\begin{pmatrix}
+1 & 0 \\
+0 & i
+\end{pmatrix},
+\quad
+T =
+\begin{pmatrix}
+1 & 0 \\
+0 & e^{i\pi/4}
+\end{pmatrix}
+$$
+
 
 ### 3. Multi-Target Control Links (Entanglement)
 **Feature:** Link multiple control nodes (`CTRL`) to target gates to create complex entangling operations (like CNOT or Toffoli).
